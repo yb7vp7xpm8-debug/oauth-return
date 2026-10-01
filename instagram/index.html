@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="referrer" content="no-referrer">
+<meta name="robots" content="noindex">
+<title>Returning to your Mac</title>
+</head>
+<body style="font:18px system-ui,sans-serif;margin:3em">
+<p>Returning to the sign-in helper on your Mac…</p>
+<script>
+  // Passes the one-time sign-in code to the helper listening on this computer (127.0.0.1).
+  // Nothing is stored, logged or sent anywhere else.
+  location.replace('http://127.0.0.1:8765/instagram/callback' + location.search);
+</script>
+</body>
+</html>
